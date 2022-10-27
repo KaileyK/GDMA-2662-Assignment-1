@@ -3,50 +3,104 @@
 <head>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e7873d0934.js" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <title>Assignment 1</title>
 </head>
 
 <body>
-    <div class="wrapper">
-        <div>
-            <img src="img/act-on-logo.png" alt="act on logo" width="200">
-        </div>
-        <div>
-            <nav>
-                <ul>
-                <li> <a href="#">Home</a></li>
-                <li> <a href="benefits.html">Benefits</a></li>
-                <li><a href="hosting.html">Hosting</a></li>
+    <header>
+        <div class="wrapper row">
+            <div>
+                <h1><img src="img/act-on-logo.png" alt="act on" width="200"></h1> <!-- Change name of png, logo first, also JPEG-->
+            </div>
+
+            <div>
+                <ul class="contact">
+                    <li><b>Support:</b></li>
+                    <li> <a href="#">info@acton.com</a></li>
+                    <li>|</li>
+                    <li> <a href="#">login</a></li>
                 </ul>
-            </nav>
+                <nav>
+                    <ul>
+                        <li> <a href="#">Home</a></li>
+                        <li> <a href="benefits.html">Benefits</a></li>
+                        <li> <a href="hosting.html">Hosting</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
-    </div>
 
-    <section class="wrapper">
-        <div>
-            <header>
-                <h1>Awesome Hosting <br><span>With Unlimited Features</span></h1>
-            </header>
-    </section>
+        <div id="awesome-hosting">
+            <div class="wrapper">
+                <p>Awesome Hosting <br><span>With Unlimited Features</span></p>
+            </div>
+        </div>
+    </header>
 
-    <section class="wrapper">
-        <p>With our latest optimized server hardware, you'll get faster sites — up to nearly 40% average improvement in overall server response times.
-        </p>
-        <dl>
-            <dt>Non-Volatile Memory Express (NVMe) Solid State Drives (SSDs)</dt>
-            <dd> Get up to a 7x throughput boost2 with our server NVMe SSDs for resource-intensive websites.</dd>
-            <dt>PHP OPCache</dt>
-            <dd>PHP scripts are executed once, then stored in memory for up to 33% faster server response times.</dd>
-            <dt>Substantial I/O Resources</dt>
-            <dd>Get faster queries of large databases and help prevent slow loading websites — with 10MB/s of I/O.</dd>
-        </dl> 
-    </div>
-    
-    <div>
-        <img src="img/hosting-img.jpg" alt="girl on laptop" width="500">
-    </div>
-        
-    </section>
+    <main class="wrapper">
+        <section class="row" id="hosting-moving">
+            <div>
+                <header>
+                    <h2><span>Optimized<br></span> Hosting</h2>
+                </header>
+                <p>With our latest optimized server hardware, you'll get faster sites &mdash; up to nearly 40% average improvement in overall server response times.</p>
+                <dl>
+                    <dt>Non-Volatile Memory Express (NVMe) Solid State Drives (SSDs)</dt>
+                    <dd> Get up to a 7x throughput boost2 with our server NVMe SSDs for resource-intensive websites.</dd>
+                    <dt>PHP OPCache</dt>
+                    <dd>PHP scripts are executed once, then stored in memory for up to 33% faster server response times.</dd>
+                    <dt>Substantial I/O Resources</dt>
+                    <dd>Get faster queries of large databases and help prevent slow loading websites &mdash; with 10MB/s of I/O.</dd>
+                </dl> 
+            
+                
+                <p><a href="#"> See Plans and Pricing</a></p>
+                
+            </div>
+
+            <div id="background-img">
+                <i class="fa-solid fa-certificate"></i>
+            </div>
+        </section>
+
+        <div class="row">
+            <section class="row">
+                <div>
+                    <i class="fa-solid fa-compass-drafting"></i>
+                </div>
+                <div>
+                    <header>
+                        <h2>Select Your Template</h2>
+                    </header>
+                    <p>Choose from 100s of templates covering every type of buisness.</p>
+                </div>
+            </section>
+
+            <section class="row">
+                <div><i class="fa-solid fa-pen-to-square"></i></div>
+                <div>
+                    <header>
+                        <h2>Make it Your Own</h2>
+                    </header>
+                    <p>Change colors, fonts or the entire layout with just a click.</p>
+                </div>
+            </section>
+
+            <section class="row">
+                <div><i class="fa-solid fa-champagne-glasses"></i></div>
+                <div>
+                    <header>
+                        <h2>Launch and Promote</h2>
+                    </header>
+                    <p>Use the integrated marketing tools to attract (and keep) customers.</p>
+                </div>
+            </section>
+        </div>
+    </main>
 </body>
 </html>

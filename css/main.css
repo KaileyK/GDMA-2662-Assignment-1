@@ -22,15 +22,141 @@
 
 /* ----- TYPOGRAPHY ----- */
 
+*{
+        font-family: "Source Sans Pro", sans-serif;
+        box-sizing: border-box;
+        -webkit-box-sizing:border-box;
+        -moz-box-sizing:border-box;
+        -o-box-sizing:border-box;
+        -ms-box-sizing:border-box;
+}
+
 .wrapper{
         width:1024px;
         margin: 0 auto;
 }
 
-h1{
-        text-align: center;
+h1,
+h2,
+h3{
+        text-transform: uppercase;
+        margin: 0 auto;
 }
 
 span{
         font-weight: 200;
+        font-size: 30px;
+}
+
+#hosting-moving h3{
+        font-size: 35px;
+}
+
+#hosting-moving span{
+        font-size: 18px;
+}
+
+.row{
+        display: flex;
+        justify-content: space-between;
+}
+
+#hosting-moving{
+        width:880px;
+}
+
+i{
+        color: #FE8360;
+        font-size: 30px;
+}
+
+ul li{
+        list-style: none;
+}
+
+a{
+        background-color: #FE8360;
+        transition: 1s;
+        padding:15px;
+        color: #FFFFFF;
+        text-transform: uppercase;
+        text-decoration: none;
+        margin: 0 auto;
+}
+
+a:hover{
+        background-color: #51CCF6;
+        transition: 1s; 
+}
+
+.fa-solid,
+.fa-certificate{
+        position: absolute;
+        width: 200px;
+}
+
+
+#background-img{
+        background: url(../img/hosting-img.jpg)no-repeat;
+        background-size:cover;
+        -webkit-background-size:cover;
+        -moz-background-size:cover;
+        -o-background-size:cover;
+        -ms-background-size:cover;
+        width: 620px;
+        height: 350px;
+        margin: 0 auto;
+        margin-left: 20px;
+}
+
+#awesome-hosting{
+        background: url(../img/hero-img.jpg) no-repeat center;
+        background-size: cover;
+        -webkit-background-size:cover;
+        -moz-background-size:cover;
+        -o-background-size:cover;
+        -ms-background-size:cover;
+        padding: 200px;
+        margin: 0 auto;
+        margin-bottom: 15px;
+        color: #ffffff;
+        font-size: 40px;
+        text-align: center;
+        line-height: 35px;
+}
+
+ul li{
+        display: inline-block;
+}
+
+ul .contact{
+        justify-content: flex-end;
+}
+
+.contact li a{
+        padding: 0;
+        background-color: transparent;
+        color: #3F3C45;
+        text-transform: lowercase;
+        margin: 4px;
+}
+
+.contact li a:hover:first-of-type{
+        color:#FE8360;
+}
+
+.benefits{
+        background-color: #51CCF8;
+}
+
+.benefits,
+.hosting{
+        padding:80px;
+        color:#ffffff;
+        font-size: 30px;
+        margin-bottom: 20px;
+}
+
+.hosting{
+       background-color: #FE8360; 
 }
