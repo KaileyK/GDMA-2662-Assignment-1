@@ -36,11 +36,30 @@
         margin: 0 auto;
 }
 
+.col-3{
+        columns: 3;
+}
+
+h1{
+        color:#ffffff;
+}
+
+h2{
+        color: #3F3C45;
+}
+
 h1,
 h2,
 h3{
         text-transform: uppercase;
         margin: 0 auto;
+        line-height: 40px;
+}
+
+h2,
+h3{
+        line-height: 25px;
+        font-size: 18px;
 }
 
 span{
@@ -48,7 +67,7 @@ span{
         font-size: 30px;
 }
 
-#hosting-moving h3{
+#hosting-moving h2{
         font-size: 35px;
 }
 
@@ -61,17 +80,28 @@ span{
         justify-content: space-between;
 }
 
+.form .row{
+        align-items: center;
+}
+
 #hosting-moving{
-        width:880px;
+        margin-bottom: 40px;
+}
+
+
+#hosting-moving p:last-of-type{
+        margin-top: 40px;
 }
 
 i{
         color: #FE8360;
-        font-size: 30px;
+        font-size: 50px;
+        margin: 8px 40px 0 0 ;
 }
 
 ul li{
         list-style: none;
+        color:#3F3C45;
 }
 
 a{
@@ -89,9 +119,9 @@ a:hover{
         transition: 1s; 
 }
 
-.fa-solid,
 .fa-certificate{
         position: absolute;
+        margin-right: 30px;
         width: 200px;
 }
 
@@ -103,13 +133,12 @@ a:hover{
         -moz-background-size:cover;
         -o-background-size:cover;
         -ms-background-size:cover;
-        width: 620px;
+        width: 510px;
         height: 350px;
-        margin: 0 auto;
-        margin-left: 20px;
+        margin: 20px;
 }
 
-#awesome-hosting{
+#bg-header{
         background: url(../img/hero-img.jpg) no-repeat center;
         background-size: cover;
         -webkit-background-size:cover;
@@ -125,8 +154,21 @@ a:hover{
         line-height: 35px;
 }
 
-ul li{
+#bg-header p{
+        text-transform: uppercase;
+        font-size: 45px;
+        font-weight: 700;
+}
+
+.navigation ul li,
+.media li {
         display: inline-block;
+        margin: 0 auto;
+        margin-top: 12px;
+}
+
+.media li{
+        margin: 0 8px;
 }
 
 ul .contact{
@@ -134,7 +176,8 @@ ul .contact{
 }
 
 .contact li a{
-        padding: 0;
+        padding:0;
+        margin-bottom: 8px;
         background-color: transparent;
         color: #3F3C45;
         text-transform: lowercase;
@@ -154,9 +197,171 @@ ul .contact{
         padding:80px;
         color:#ffffff;
         font-size: 30px;
-        margin-bottom: 20px;
 }
 
 .hosting{
        background-color: #FE8360; 
+}
+
+.group-items section{
+        width:410px;
+        margin: 0 8px;
+}
+.group-items{
+        margin: 80px 0;
+}
+
+#hosting-moving li{
+       color: #000000;
+}
+
+fieldset{
+        border:none;
+}
+
+.form h2 span{
+        font-size: 20px;
+}
+
+.form h2{
+        font-size: 40px;
+}
+
+.form header>div i{
+        font-size: 20px;
+}
+
+input{
+        width: 300px;
+        height: 50px;
+}
+
+select{
+        padding: 12px;
+        width:140px;
+}
+
+.form{
+        background-color: #E7F5F8;
+        padding: 40px;
+}
+
+table span:first-of-type{
+        font-size: 70px ;
+}
+
+thead tr:first-child th{
+        text-transform: uppercase;
+        font-size:25px;
+        font-weight: 500;
+}
+
+thead tr:first-child>th:first-line{
+        font-weight: 700;
+        font-size: 70px;
+}
+
+thead tr:first-child>th:first-letter{
+        font-weight: 200;
+}
+
+table span:last-of-type{
+        font-size: 25px;
+}
+
+
+
+
+table{
+        width: 1024px;
+        text-align: center;
+        margin: 60px 0;
+        padding: 20px 0;
+        color:#3F3C45;
+        border: solid 2px #E0DFE1;
+        border-collapse: collapse;
+}
+
+tbody tr,
+tbody td{
+        border-top: 1px solid #E0DFE1;
+        padding: 10px;
+}
+
+p button,
+td button{
+        background-color: #FE8360;
+        transition: 1s;
+        padding:15px;
+        color: #FFFFFF;
+        text-transform: uppercase;
+        text-decoration: none;
+        margin: 0 auto;
+        border:none;
+        width: 200px;
+        margin: 30px 0;
+}
+
+th button{
+        width: 200px;
+        text-transform: uppercase;
+        color: #ffffff;
+        background-color: #51CCF8;
+        padding: 8px;
+        margin: 20px 0;
+        border:none;
+}
+
+
+td,
+th{
+        border-right: solid 1px #E0DFE1;
+}
+p button:hover,
+td button:hover{
+        background-color: #51CCF6;
+        transition: 1s;
+}
+
+
+tbody tr:first-child{
+        border-top: none;
+}
+
+footer{
+        background-color: #4D515C;
+        padding: 40px;
+        color:#ffffff;
+}
+
+tfoot a{
+        width: 200px;
+}
+
+footer li a,
+footer nav,
+footer ul,
+footer li{
+        background-color: transparent;
+        color:#B6BCC7;
+        padding: 0;
+        text-transform: capitalize;
+        transition:none;
+        margin: 10px 0;
+        font-size: 14px;
+}
+
+footer nav:hover,
+footer a:hover{
+        color:white;
+        background-color: transparent;
+        transition:none;
+}
+
+footer b{
+        color:#ffffff;
+}
+
+footer nav{
+        display: inline-block;
 }

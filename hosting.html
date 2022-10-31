@@ -12,24 +12,23 @@
 </head>
 
 <body>
-    <div class="wrapper">
-        <header>
-            <div><img src="img/act-on-logo.png" alt="act on logo" width="200"></div>
-        </header>
-
+    <div class="wrapper row">
         <div>
-
-            <div class="login row">
-                <p><b>Support:</b></p>
-                <ul class="row">
-                    <li> <a href="#">info@acton.com</a></li>
-                    <li>|</li>
-                    <li> <a href="#">login</a></li>
-                </ul>
+            <div>
+                <img src="img/act-on-logo.png" alt="act on logo" width="200">
             </div>
+        </div>
+
+        <div class="navigation">
+            <ul class="contact">
+                <li><b>Support:</b></li>
+                <li> <a href="#">info@acton.com</a></li>
+                <li>|</li>
+                <li> <a href="#">login</a></li>
+            </ul>
 
             <nav>
-                <ul class="row">
+                <ul>
                     <li> <a href="index.html">Home</a></li>
                     <li> <a href="benefits.html">Benefits</a></li>
                     <li><a href="#">Hosting</a></li>
@@ -46,59 +45,160 @@
         </div>
     </section>
 
-    <section id="benefits">
+    <main>
+
+        <section class="row form">
+            <div class="wrapper">
+                <div class="row">
+                    <header>
+                        <div><i class="fa-solid fa-magnifying-glass"></i></div>
+                        <h2><span>Search Your</span><br>Domain</h2>
+                    </header>
+                
+                    <form id="form-search" class="row">
+                        <label for="domain-name"></label>
+                        <input type="text" placeholder="domain name">
+
+                        <fieldset>
+                            <select name="year" id="year" required>
+                                <option value="Year(0-1 year)" disabled selected>Year (0-1)</option>
+                                <option value="0-1years">0-1 years</option>
+                                <option value="1-2years">1-2 years</option>
+                                <option value="3-5years">3-5years</option>
+                                <option value="5+">5+years</option>
+                            </select>
+                        </fieldset>
+
+                        <fieldset>
+                            <select name="extension" id="extension" required>
+                                <option value=".com" disabled selected>.com</option>
+                                <option value=".com">.com</option>
+                                <option value=".org">.org</option>
+                                <option value=".net">.net</option>
+                                <option value=".gov">.gov</option>
+                                <option value=".edu">.edu</option>
+                            </select>
+                        </fieldset>
+
+                        <p><button>Search</button></p>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="table">
         <div class="wrapper row">
-            <div>
-                <div class="row"><i class="fa-solid fa-compass-drafting"></i></div>
-                <header class="row">
-                    <h2>Global Data Centers</h2>
-                </header>
-                <p>Get faster page loads and better visitor experience with nearby, state-of-the-art data centers in North America, Europe or Asia-Pacific.</p>
-            </div>
+            <table>
+                <caption class="sr-only">Hosting Plans</caption>
+                <colgroup>
+                    <col>
+                    <col>
+                    <col>
+                    <col>
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th><span>$</span>5<br> <span>Per month</span></th>
+                        <th><span>$</span>7<br> <span>Per month</span></th>
+                        <th><span>$</span>9<br> <span>Per month</span></th>
+                        <th><span>$</span>10<br><span>Per month</span></th>
+                    </tr>
+                    <tr>
+                        <th><button>Basic Plan</button></th>
+                        <th><button>Standard Plan</button></th>
+                        <th><button>Pro Plan</button></th>
+                        <th><button>Premium Plan</button></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2GB Disk Space</td>
+                        <td>5GB Disk Space</td>
+                        <td>10GB Disk Space</td>
+                        <td>15GB Disk Space</td>
+                    </tr>
 
-            <div>
-                <div class="row"><i class="fa-solid fa-pen-to-square"></i></div>
-                <header class="row">
-                    <h2>24/7/365 Support</h2>
-                </header>
-                <p>Our support team is available around the clock to help!</p>
-            </div>
+                    <tr>
+                        <td>1TB Bandwidth</td>
+                        <td>1TB Bandwidth</td>
+                        <td>1TB Bandwidth</td>
+                        <td>1TB Bandwidth</td>
+                    </tr>
 
-            <div>
-                <div class="row"><i class="fa-solid fa-champagne-glasses"></i></div>
-                <header class="row">
-                    <h2>Daily Backups</h2>
-                </header>
-                <p>Help protect against disasters and mishaps by recovering your entire hosting account, site(s), files, databases, mailboxes and mail forwarders from the previous day with automated Daily Backups – plus, paid options to recover up to 30 days.
-                </p>
-            </div>
+                    <tr>
+                        <td>No DDos Protection</td>
+                        <td>Free DDos Protection</td>
+                        <td>Free DDos Protection</td>
+                        <td>Free DDos Protection</td>
+                    </tr>
+
+                    <tr>
+                        <td>No Daily Backups</td>
+                        <td>Free Daily Backups</td>
+                        <td>Free Daily Backups</td>
+                        <td>Free Daily Backups</td>
+                    </tr>
+
+
+                    <tr>
+                        <td>No Managed Hosting</td>
+                        <td>No Managed Hosting</td>
+                        <td>Managed Hosting</td>
+                        <td>Managed Hosting</td>
+                    </tr>
+                </tbody>
+
+                <tfoot>
+                    <tr>
+                        <td><button>Signup </button></td>
+                        <td><button>Signup </button></td>
+                        <td><button>Signup </button></td>
+                        <td><button>Signup </button></td>
+                    </tr>
+                </tfoot>
+
+            </table>
         </div>
+    </div>
 
-        <div class="wrapper row">
-            <div>
-                <div class="row"><i class="fa-solid fa-compass-drafting"></i></div>
-                <header class="row">
-                    <h2>Easy-to-Use Control Panel</h2>
-                </header>
-                <p>Includes industry-standard cPanel to install apps, manage backups and security.</p>
-            </div>
-
-            <div>
-                <div class="row"><i class="fa-solid fa-pen-to-square"></i></div>
-                <header class="row">
-                    <h2>New: Free SSL Certificate</h2>
-                </header>
-                <p>Increase visitors' trust by helping to protect personal information, ecommerce transactions and other sensitive data with encrypted connections. Plus, SEO rankings are favorable for sites with an SSL Certificate</p>
-            </div>
-
-            <div>
-                <div class="row"><i class="fa-solid fa-champagne-glasses"></i></div>
-                <header class="row">
-                    <h2>100% Security</h2>
-                </header>
-                <p>Get peace of mind, knowing network security and DDoS protection is monitored around the clock.</p>
-            </div>
-        </div>
-    </section>
 </body>
+
+<footer>
+    <div class="wrapper col-3">
+        <section>
+            <h3>Quick Links</h3>
+            <nav>
+                <ul>
+                    <li> <a href="#">Home</a></li>
+                    <li> <a href="benefits.html">Benefits</a></li>
+                    <li> <a href="hosting.html">Hosting</a></li>
+                </ul>
+            </nav>
+        </section>
+
+        <section>
+            <h3>Contact Us</h3>
+            <address>
+                <ul>
+                    <li><b>Address:</b><a href="https://www.google.com/maps/@40.800609,-96.6907283,12z" target="_blank"> 123 Fake St. Fakersville FA 12345</a> </li>
+                    <li><b>Email:</b> <a href="mailto:info@acton.com">info@acton.com</a></li>
+                    <li><b>Phone:</b> <a href="tel:+1800-123-4567">800-123-4567</a></li>
+                </ul>        
+
+            </address>
+        </section>
+
+        <section>
+            <h3>Social Media</h3>
+            <ul class="media">
+                <li><a href="" target="_blank"><span class="fa-brands fa-facebook-f"></span><span class="sr-only">Facebook</span></a></li>
+                <li><a href="" target="_blank"><span class="fa-brands fa-instagram"></span><span class="sr-only">Instagram</span></a></li>
+                <li><a href="" target="_blank"><span class="fa-brands fa-twitter"></span><span class="sr-only">Twitter</span></a></li>
+                <li><a href="" target="_blank"><span class="fa-brands fa-linkedin-in"></span><span class="sr-only">LinkedIn</span></a></li>
+            </ul>
+        </section>
+    </div>
+</footer>
+
 </html>
