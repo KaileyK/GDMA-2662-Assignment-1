@@ -56,12 +56,11 @@
                     </header>
                 
                     <form id="form-search" class="row">
-                        <label for="domain-name"></label>
                         <input type="text" placeholder="domain name">
 
                         <fieldset>
                             <select name="year" id="year" required>
-                                <option value="Year(0-1 year)" disabled selected>Year (0-1)</option>
+                                <option value="" disabled selected hidden>Year (0-1)</option>
                                 <option value="0-1years">0-1 years</option>
                                 <option value="1-2years">1-2 years</option>
                                 <option value="3-5years">3-5years</option>
@@ -71,7 +70,7 @@
 
                         <fieldset>
                             <select name="extension" id="extension" required>
-                                <option value=".com" disabled selected>.com</option>
+                                <option value="" disabled selected hidden>.com</option>
                                 <option value=".com">.com</option>
                                 <option value=".org">.org</option>
                                 <option value=".net">.net</option>
@@ -162,43 +161,44 @@
         </div>
     </div>
 
+    <footer>
+        <div class="wrapper col-3">
+            <section>
+                <h3>Quick Links</h3>
+                <nav>
+                    <ul>
+                        <li> <a href="#">Home</a></li>
+                        <li> <a href="benefits.html">Benefits</a></li>
+                        <li> <a href="hosting.html">Hosting</a></li>
+                    </ul>
+                </nav>
+            </section>
+    
+            <section>
+                <h3>Contact Us</h3>
+                <address>
+                    <ul>
+                        <li><b>Address:</b><a href="https://www.google.com/maps/@40.800609,-96.6907283,12z" target="_blank"> 123 Fake St. Fakersville FA 12345</a> </li>
+                        <li><b>Email:</b> <a href="mailto:info@acton.com">info@acton.com</a></li>
+                        <li><b>Phone:</b> <a href="tel:+1800-123-4567">800-123-4567</a></li>
+                    </ul>        
+    
+                </address>
+            </section>
+    
+            <section>
+                <h3>Social Media</h3>
+                <ul class="media">
+                    <li><a href="" target="_blank"><span class="fa-brands fa-facebook-f"></span><span class="sr-only">Facebook</span></a></li>
+                    <li><a href="" target="_blank"><span class="fa-brands fa-instagram"></span><span class="sr-only">Instagram</span></a></li>
+                    <li><a href="" target="_blank"><span class="fa-brands fa-twitter"></span><span class="sr-only">Twitter</span></a></li>
+                    <li><a href="" target="_blank"><span class="fa-brands fa-linkedin-in"></span><span class="sr-only">LinkedIn</span></a></li>
+                </ul>
+            </section>
+        </div>
+    </footer>
+
 </body>
 
-<footer>
-    <div class="wrapper col-3">
-        <section>
-            <h3>Quick Links</h3>
-            <nav>
-                <ul>
-                    <li> <a href="#">Home</a></li>
-                    <li> <a href="benefits.html">Benefits</a></li>
-                    <li> <a href="hosting.html">Hosting</a></li>
-                </ul>
-            </nav>
-        </section>
-
-        <section>
-            <h3>Contact Us</h3>
-            <address>
-                <ul>
-                    <li><b>Address:</b><a href="https://www.google.com/maps/@40.800609,-96.6907283,12z" target="_blank"> 123 Fake St. Fakersville FA 12345</a> </li>
-                    <li><b>Email:</b> <a href="mailto:info@acton.com">info@acton.com</a></li>
-                    <li><b>Phone:</b> <a href="tel:+1800-123-4567">800-123-4567</a></li>
-                </ul>        
-
-            </address>
-        </section>
-
-        <section>
-            <h3>Social Media</h3>
-            <ul class="media">
-                <li><a href="" target="_blank"><span class="fa-brands fa-facebook-f"></span><span class="sr-only">Facebook</span></a></li>
-                <li><a href="" target="_blank"><span class="fa-brands fa-instagram"></span><span class="sr-only">Instagram</span></a></li>
-                <li><a href="" target="_blank"><span class="fa-brands fa-twitter"></span><span class="sr-only">Twitter</span></a></li>
-                <li><a href="" target="_blank"><span class="fa-brands fa-linkedin-in"></span><span class="sr-only">LinkedIn</span></a></li>
-            </ul>
-        </section>
-    </div>
-</footer>
 
 </html>
