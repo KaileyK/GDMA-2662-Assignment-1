@@ -119,9 +119,17 @@ a:hover{
         transition: 1s; 
 }
 
+div>a{
+        background-color: transparent;
+}
+
+div>a:hover{
+        background-color: transparent;
+}
+
 .fa-certificate{
         position: absolute;
-        margin-right: 30px;
+        margin-right: 10px;
         width: 200px;
 }
 
